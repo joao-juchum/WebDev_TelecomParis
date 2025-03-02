@@ -14,3 +14,22 @@ The purpose of this lab is to study the concepts discussed during INF203 on Web 
 -> run `node exercise1_test.mjs` in the terminal
 
 ## Exercise 2 - Strings, Objects, Anonymous Functions
+
+**Question 2a:** Write a wordCount function which, for each word within a string, counts the number of occurrences of this word in this string. The function shall return an object whose properties are the words and the values of these properties are the occurrence numbers. Make sure this function works on a string of at least 500 words. The input string is assumed to contain no punctuation and only small caps.
+
+*Example*: on the string “fish bowl fish bowl fish”, the result is `{fish: 3, bowl:2}`
+
+**Question 2b:** Create a class WordL with a constructor which takes as input a string and that returns an object with the following methods:
+
+* `getWords()` which returns an array of words present in the original text, lexicographically sorted and without duplicates,
+* `maxCountWord()` which returns the word with the most occurrences, and if there are several words with the same number of occurrences, returns the first of them in the lexicographically sorted list from getWords()
+* `minCountWord()` which returns the word with the least number of occurrences, and if there are several words with the same number of occurrences, returns the first of them in the lexicographically sorted list from getWords() 
+* and `getCount(word)` which gives the number of occurrences for a given word.
+
+**Question 2c:** Add to WordL an applyWordFunc(f) method to apply any function to each word in lexicographic order and to return an array of results, for example:
+
+``` JavaScript
+function f (word) {return word.length;}
+wordList.applyWordFunc(f)
+```
+then returns the array of lengths of words.

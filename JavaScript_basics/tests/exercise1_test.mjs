@@ -1,6 +1,6 @@
 "use strict";
 
-import {fibonaIt,fiboRec,fiboArr,fibonaMap} from "./exercise1.mjs";
+import {fibonaIt,fiboRec,fiboArr,fibonaMap} from "../sources/exercise1.mjs";
 
 // Tests for fibonaIt
 console.log(fibonaIt(0));
