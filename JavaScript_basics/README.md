@@ -50,3 +50,16 @@ var student = new Std("Dupond", "John", 1835);
 `"student: Doe, John, 432, American"`
 
 ## Exercise 4 - Module in JavaScript
+
+**Question 4:** Create a module for a Prom class. An object of the Prom class may contain any number of Std or ForeignStud objects and have following instance methods:
+
+* `add(student)` which adds a student to the promotion,
+* `size()` which returns the number of students in the promotion,
+* `get(i)` who returns the i-th Std in the promotion in the order where you did add. Note: the index of the first student is 0
+* `print()` that prints all students to the console, one per line, and returns the printed string
+* `write()` which serializes the promotion to JSON, in other words transforms the array of students contained in a promotion object into a string of characters,
+* `read(str)` that reads a JSON object and rebuilds the promotion,  WARNING: going through JSON.stringify then JSON.parse looses the fact that the object was a new Std…
+* `saveF(fileName)` that writes the promotion to a text file as a JSON object (reuse the above function write)
+* `readF(fileName)` which recreates the promotion from what has been saved to a file (reuse the above function read)
+
+The functions write and read serialize and deserialize the object. Please use JSON.stringify to serialize and JSON.parse to deserialize.
