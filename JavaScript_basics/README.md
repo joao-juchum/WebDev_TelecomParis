@@ -33,3 +33,20 @@ function f (word) {return word.length;}
 wordList.applyWordFunc(f)
 ```
 then returns the array of lengths of words.
+
+## Exercise 3 - Object-Oriented Programming in JavaScript
+**Question 3a:** Create a `Std` class with attributes named `lastName`, `firstName` and `id` in that order, so that one can write the following code:
+
+```JavaScript
+var student = new Std("Dupond", "John", 1835);
+```
+
+**Question 3b:** Add a `toString` method that does not take a parameter, and which returns a string of characters built from the properties of the object in the form:
+
+`"student: Dupond, Jean, 1835"`
+
+**Question 3c:** Create a `class ForeignStud` extending `Std` that also allows to give a nationality to a student, so the arguments of the constructor are `lastName, firstName, id and nationality`. Add a `toString` method that takes the result of the basic class and adds the nationality, with a field of name nationality as follows:
+
+`"student: Doe, John, 432, American"`
+
+## Exercise 4 - Module in JavaScript
