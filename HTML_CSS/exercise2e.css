@@ -10,15 +10,12 @@
     height: 200px;
 }
 
-#div_3 {
-    background-color: grey;
-    margin: 10px;
-}
-
-.div_3 {
-    position: fixed;
+.front-box {
+    position: fixed; /* Fixed means it stays in place when scrolling */
     top: 124px;
     left: 124px;
-    width: 485px;
-    height: 485px;
-}
+    width: 425px;
+    height: 425px;
+    z-index: 10;
+    background-color: grey;
+  }
